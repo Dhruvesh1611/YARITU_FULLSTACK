@@ -1,0 +1,143 @@
+.collection-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: var(--button-bg);
+  margin-bottom: 40px;
+}
+
+.section-title .highlight {
+  color: var(--brand-accent);
+}
+
+.divider {
+  border: 0;
+  border-top: 2px solid #000000;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 70px 0;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  position: relative;
+  width: 252px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px 0px #25384d40;
+}
+
+.btn-glow, .btn-bg, .btn-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.btn-glow {
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.btn-bg {
+  background-color: var(--button-bg);
+  z-index: 2;
+}
+
+.btn-text {
+  z-index: 3;
+  color: var(--text-light);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-content {
+  padding: 0 5%;
+}
+
+.breadcrumbs {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.breadcrumbs > span {
+  font-weight: 400;
+}
+
+.collection-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.collection-subtitle {
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+}
+
+.product-card {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--brand-accent);
+  padding: 1px;
+}
+
+.product-image {
+  width: 100%;
+  height: 349px;
+  object-fit: cover;
+  border: 1px solid #e1c28c;
+  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.16);
+}
+
+.card-info {
+  padding: 24px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .collection-content {
+    padding: 0;
+  }
+  .breadcrumbs, .collection-title, .collection-subtitle {
+    text-align: center;
+  }
+}
+
+.whatsapp-fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  z-index: 100;
+}

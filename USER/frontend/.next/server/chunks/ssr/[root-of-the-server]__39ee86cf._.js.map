@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///Users/dhruveshshyara/Desktop/vs%20code/YARITU_FULLSTACK/frontend/app/page.js"],"sourcesContent":["import React from 'react';\nimport Link from 'next/link';\n\nexport default function Home() {\n  return (\n    <div>\n      <h1>Home Page</h1>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,qSAAC;kBACC,cAAA,qSAAC;sBAAG;;;;;;;;;;;AAGV","debugId":null}}]
-}

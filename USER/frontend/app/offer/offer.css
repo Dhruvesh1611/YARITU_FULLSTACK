@@ -1,9 +1,13 @@
-.hero-section {
+.offer-page .offer-hero {
     padding-top: 127px;
     padding-bottom: 64px;
     text-align: center;
+    background: none !important;
+    position: static !important;
+    height: auto !important;
+    display: block !important;
 }
-.hero-title {
+.offer-page .offer-hero-title {
     font-family: var(--font-heading);
     font-size: 64px;
     font-weight: 600;
@@ -11,31 +15,31 @@
     color: var(--color-dark-gray);
     margin-bottom: 16px;
 }
-.hero-subtitle {
+.offer-page .offer-hero-subtitle {
     font-family: var(--font-body);
     font-size: 21px;
     color: var(--color-text-gray);
     line-height: 1.6;
 }
 @media (max-width: 768px) {
-    .hero-section {
+    .offer-page .offer-hero {
         padding-top: 60px;
         padding-bottom: 30px;
     }
-    .hero-title {
+    .offer-page .offer-hero-title {
         font-size: 48px;
     }
-    .hero-subtitle {
+    .offer-page .offer-hero-subtitle {
         font-size: 18px;
     }
 }
 
 /* CSS from section:store-selector */
-.store-selector-section {
+.offer-page .store-selector-section {
     background-color: var(--color-light-gray-bg);
     padding: 40px 0;
 }
-.store-selector-container {
+.offer-page .store-selector-container {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -43,26 +47,26 @@
     margin: 0 auto;
     padding: 0 100px;
 }
-.store-selector-content {
+.offer-page .store-selector-content {
     flex: 1;
 }
-.store-selector-image {
+.offer-page .store-selector-image {
     flex: 1;
     max-width: 690px;
 }
-.store-selector-image img {
+.offer-page .store-selector-image img {
     width: 100%;
     height: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
-.store-selector-title {
+.offer-page .store-selector-title {
     font-family: var(--font-heading);
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 40px;
 }
-.store-dropdown {
+.offer-page .store-dropdown {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,57 +77,58 @@
     width: 270px;
     cursor: pointer;
 }
-.store-dropdown span {
+.offer-page .store-dropdown span {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: var(--color-dark-gray);
 }
-.store-dropdown img {
+.offer-page .store-dropdown img {
     width: 35px;
     height: 35px;
 }
 
 @media (max-width: 1024px) {
-    .store-selector-container {
+    .offer-page .store-selector-container {
         flex-direction: column;
         padding: 0 40px;
         gap: 40px;
     }
-    .store-selector-content {
+    .offer-page .store-selector-content {
         text-align: center;
     }
-    .store-dropdown {
+    .offer-page .store-dropdown {
         margin: 0 auto;
     }
 }
 
 /* CSS from section:offers */
-.offers-section {
+.offer-page .offers-section {
     position: relative;
 }
-.offers-header {
+.offer-page .offers-header {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 45px;
 }
-.offers-header img {
+.offer-page .offers-header img {
     width: 50px;
     height: 50px;
 }
-.offers-header h2 {
+.offer-page .offers-header h2 {
     font-family: var(--font-heading);
     font-size: 40px;
     font-weight: 600;
     color: var(--color-black);
 }
-.offers-grid {
+.offer-page .offers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 32px;
     justify-content: center;
+    align-items: stretch;
 }
-.offer-card {
+.offer-page .offer-card {
     background-color: var(--color-white);
     border-radius: 20px;
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
@@ -131,17 +136,17 @@
     display: flex;
     flex-direction: column;
 }
-.offer-card-image {
+.offer-page .offer-card-image {
     position: relative;
     height: 200px;
     overflow: hidden;
 }
-.offer-card-image img {
+.offer-page .offer-card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.discount-tag {
+.offer-page .discount-tag {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -153,33 +158,33 @@
     font-size: 17px;
     font-weight: 700;
 }
-.offer-card-content {
+.offer-page .offer-card-content {
     padding: 32px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.offer-card-content h3 {
+.offer-page .offer-card-content h3 {
     font-family: var(--font-heading);
     font-size: 24px;
     font-weight: 600;
     color: var(--color-dark-gray);
     margin-bottom: 16px;
 }
-.offer-card-content p {
+.offer-page .offer-card-content p {
     font-size: 16px;
     color: var(--color-text-gray);
     line-height: 1.6;
     margin-bottom: 16px;
     flex-grow: 1;
 }
-.validity-date {
+.offer-page .validity-date {
     font-size: 14px;
     font-weight: 600;
     color: var(--color-primary);
     margin-bottom: 24px;
 }
-.claim-button {
+.offer-page .claim-button {
     display: block;
     background-color: var(--color-dark-gray);
     color: var(--color-white);
@@ -192,59 +197,73 @@
     font-size: 13px;
     transition: background-color 0.3s;
 }
-.claim-button:hover {
+.offer-page .claim-button:hover {
     background-color: #444;
 }
-.whatsapp-float {
-    position: absolute;
+.offer-page .whatsapp-float {
+    position: absolute !important;
     top: -22px;
     right: 100px;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
 }
-.whatsapp-float img {
+.offer-page .whatsapp-float img {
     width: 45px;
     height: 45px;
 }
 @media (max-width: 768px) {
-    .offers-header {
+    .offer-page .offers-header {
         flex-direction: column;
         text-align: center;
         gap: 10px;
         margin-bottom: 30px;
     }
-    .offers-header h2 {
+    .offer-page .offers-header h2 {
         font-size: 32px;
     }
-    .whatsapp-float {
+    .offer-page .whatsapp-float {
         top: 10px;
         right: 20px;
     }
 }
 
+/* Offer local utilities */
+.offer-page .page-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.offer-page .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 /* CSS from section:benefits */
-.benefits-section {
+.offer-page .benefits-section {
     background-color: var(--color-white);
 }
-.benefits-header {
+.offer-page .benefits-header {
     text-align: center;
     margin-bottom: 48px;
 }
-.benefits-title {
+.offer-page .benefits-title {
     font-family: var(--font-heading);
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 15px;
 }
-.benefits-subtitle {
+.offer-page .benefits-subtitle {
     font-size: 19px;
     color: var(--color-text-gray);
 }
-.benefits-grid {
+.offer-page .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
     justify-content: center;
 }
-.benefit-card {
+.offer-page .benefit-card {
     background-color: #f8f4f0;
     border-radius: 20px;
     text-align: center;
@@ -252,7 +271,7 @@
     overflow: hidden;
     min-height: 365px;
 }
-.benefit-bg-img {
+.offer-page .benefit-bg-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -262,7 +281,7 @@
     z-index: 1;
     opacity: 0.5;
 }
-.benefit-content {
+.offer-page .benefit-content {
     position: relative;
     z-index: 2;
     display: flex;
@@ -272,24 +291,24 @@
     padding: 40px;
     height: 100%;
 }
-.benefit-icon {
+.offer-page .benefit-icon {
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 24px;
 }
-.benefit-content h3 {
+.offer-page .benefit-content h3 {
     font-family: var(--font-heading);
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 16px;
 }
-.benefit-content p {
+.offer-page .benefit-content p {
     font-size: 16px;
     color: var(--color-text-gray);
     line-height: 1.6;
     margin-bottom: 32px;
 }
-.benefit-button {
+.offer-page .benefit-button {
     background-color: var(--color-primary);
     color: var(--color-dark-gray);
     padding: 13px 24px;
@@ -300,34 +319,34 @@
     font-size: 13px;
     transition: background-color 0.3s;
 }
-.benefit-button:hover {
+.offer-page .benefit-button:hover {
     background-color: #d4b57e;
 }
 
 /* CSS from section:newsletter */
-.newsletter-section {
+.offer-page .newsletter-section {
     background-color: var(--color-light-gray-bg);
 }
-.newsletter-content {
+.offer-page .newsletter-content {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
-.newsletter-content h2 {
+.offer-page .newsletter-content h2 {
     font-family: var(--font-heading);
     font-size: 40px;
     font-weight: 600;
     color: var(--color-black);
     margin-bottom: 15px;
 }
-.newsletter-content p {
+.offer-page .newsletter-content p {
     font-size: 19px;
     color: var(--color-text-gray);
     line-height: 1.6;
     margin-bottom: 30px;
     opacity: 0.9;
 }
-.subscribe-form {
+.offer-page .subscribe-form {
     display: flex;
     max-width: 500px;
     margin: 0 auto 15px;
@@ -335,17 +354,17 @@
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-.subscribe-form input {
+.offer-page .subscribe-form input {
     flex-grow: 1;
     border: none;
     padding: 16px 24px;
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
-.subscribe-form input:focus {
+.offer-page .subscribe-form input:focus {
     outline: none;
 }
-.subscribe-form button {
+.offer-page .subscribe-form button {
     border: none;
     background-color: var(--color-dark-blue);
     color: var(--color-white);
@@ -356,10 +375,10 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.subscribe-form button:hover {
+.offer-page .subscribe-form button:hover {
     background-color: #3a526a;
 }
-.newsletter-content small {
+.offer-page .newsletter-content small {
     font-size: 14px;
     color: var(--color-black);
     opacity: 0.7;

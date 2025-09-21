@@ -5,10 +5,11 @@ import Image from 'next/image';
 export default function Offer() {
   return (
     <>
-      <section id="hero" className="hero-section">
+      <div className="offer-page">
+    <section id="hero" className="offer-hero">
         <div className="page-container">
-          <h1 className="hero-title">Exclusive <span className="highlight-text">Offers</span> Near You</h1>
-          <p className="hero-subtitle">Select your store to see personalized deals</p>
+      <h1 className="offer-hero-title">Exclusive <span className="highlight-text">Offers</span> Near You</h1>
+      <p className="offer-hero-subtitle">Select your store to see personalized deals</p>
         </div>
       </section>
       <section id="store-selector" className="store-selector-section">
@@ -35,8 +36,8 @@ export default function Offer() {
             <div className="offer-card">
               <div className="offer-card-image">
                 <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                  <Image src="/images/e35001a0317859fbbe86698e4c5deafa9e7c49b0.png" alt="Wedding Season Special" layout="fill" objectFit="cover" />
-                  <Image src="/images/48b5596ddcb845b2425d6d68c4284007c7534a5a.png" alt="Wedding Season Special" layout="fill" objectFit="contain" style={{ zIndex: 1 }} />
+                  <Image src="/images/e35001a0317859fbbe86698e4c5deafa9e7c49b0.png" alt="Wedding Season Special" fill style={{ objectFit: 'cover' }} />
+                  <Image src="/images/48b5596ddcb845b2425d6d68c4284007c7534a5a.png" alt="Wedding Season Special" fill style={{ objectFit: 'contain', zIndex: 1 }} />
                 </div>
                 <div className="discount-tag">25% OFF</div>
               </div>
@@ -50,8 +51,8 @@ export default function Offer() {
             <div className="offer-card">
               <div className="offer-card-image">
                 <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                  <Image src="/images/0999f3009f8748589e7287a702c2c5d424644430.png" alt="Couple Combo Deal" layout="fill" objectFit="cover" />
-                  <Image src="/images/ded25fb0c9e640a9f2f502903045bbc29d9324d1.png" alt="Couple Combo Deal" layout="fill" objectFit="contain" style={{ zIndex: 1 }} />
+                  <Image src="/images/0999f3009f8748589e7287a702c2c5d424644430.png" alt="Couple Combo Deal" fill style={{ objectFit: 'cover' }} />
+                  <Image src="/images/ded25fb0c9e640a9f2f502903045bbc29d9324d1.png" alt="Couple Combo Deal" fill style={{ objectFit: 'contain', zIndex: 1 }} />
                 </div>
                 <div className="discount-tag">₹2,000/- OFF</div>
               </div>
@@ -65,8 +66,8 @@ export default function Offer() {
             <div className="offer-card">
               <div className="offer-card-image">
                 <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                  <Image src="/images/3e92d1ce86debf6c8da44d85ff7b02f8f8fe57ca.png" alt="Festival Collection" layout="fill" objectFit="cover" />
-                  <Image src="/images/d137416aaed4471817b21b5cbe445f6cccecf907.png" alt="Festival Collection" layout="fill" objectFit="contain" style={{ zIndex: 1 }} />
+                  <Image src="/images/3e92d1ce86debf6c8da44d85ff7b02f8f8fe57ca.png" alt="Festival Collection" fill style={{ objectFit: 'cover' }} />
+                  <Image src="/images/d137416aaed4471817b21b5cbe445f6cccecf907.png" alt="Festival Collection" fill style={{ objectFit: 'contain', zIndex: 1 }} />
                 </div>
                 <div className="discount-tag">25% OFF</div>
               </div>
@@ -91,7 +92,7 @@ export default function Offer() {
           </div>
           <div className="benefits-grid">
             <div className="benefit-card">
-              <Image className="benefit-bg-img" src="/images/314cf5c2d333a646384d94a377d3833614dff7ec.png" alt="" layout="fill" objectFit="cover" />
+              <Image className="benefit-bg-img" src="/images/314cf5c2d333a646384d94a377d3833614dff7ec.png" alt="" fill style={{ objectFit: 'cover' }} />
               <div className="benefit-content">
                 <div className="benefit-icon">👑</div>
                 <h3>VIP Membership</h3>
@@ -100,7 +101,7 @@ export default function Offer() {
               </div>
             </div>
             <div className="benefit-card">
-              <Image className="benefit-bg-img" src="/images/a5d65aa6565e478e0dbc85b03e39b4a6504706d9.png" alt="" layout="fill" objectFit="cover" />
+              <Image className="benefit-bg-img" src="/images/a5d65aa6565e478e0dbc85b03e39b4a6504706d9.png" alt="" fill style={{ objectFit: 'cover' }} />
               <div className="benefit-content">
                 <div className="benefit-icon">🎁</div>
                 <h3>Free Alterations</h3>
@@ -109,7 +110,7 @@ export default function Offer() {
               </div>
             </div>
             <div className="benefit-card">
-              <Image className="benefit-bg-img" src="/images/fdf8fb627ebf45a994eb0d6d2adb4892905c8628.png" alt="" layout="fill" objectFit="cover" />
+              <Image className="benefit-bg-img" src="/images/fdf8fb627ebf45a994eb0d6d2adb4892905c8628.png" alt="" fill style={{ objectFit: 'cover' }} />
               <div className="benefit-content">
                 <div className="benefit-icon">⭐</div>
                 <h3>Early Bird Access</h3>
@@ -133,6 +134,7 @@ export default function Offer() {
           </div>
         </div>
       </section>
+  </div>
     </>
   );
 }

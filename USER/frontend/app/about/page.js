@@ -27,7 +27,7 @@ export default function About() {
             <Image src="/images/e4233c8705cd8d900f4c3a2d11a232e4fd0670f5.png" alt="Yaritu traditional attire" className="main-image" width={548} height={600} />
             <div className="overlay-shape-1"></div>
             <div className="overlay-shape-2"></div>
-            <a href="#" className="whatsapp-float">
+            <a href="#" className="about-whatsapp-float">
               <Image src="/images/1995_4119.svg" alt="WhatsApp" width={45} height={45} />
             </a>
           </div>

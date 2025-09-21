@@ -5,8 +5,8 @@ import Image from 'next/image';
 export default function Contact() {
   return (
     <>
-      <section id="hero-section" className="hero-section">
-        <div className="hero-content">
+      <section id="hero-section" className="contact-hero-section">
+        <div className="contact-hero-content">
           <h1>Get in <span className="accent-text">Touch</span></h1>
           <p>We'd love to hear from you. Let's create something beautiful together.</p>
         </div>
@@ -79,18 +79,18 @@ export default function Contact() {
               </div>
               <div className="info-card social-card">
                 <h3>Connect With Us</h3>
-                <div className="social-links">
-                  <a href="#"><Image src="/images/1927_1925.svg" alt="Instagram" width={16} height={16} /></a>
-                  <a href="#"><Image src="/images/1928_1934.svg" alt="Facebook" width={16} height={16} /></a>
-                  <a href="#"><Image src="/images/1928_1939.svg" alt="Gmail" width={16} height={16} /></a>
+                <div className="contact-social-links">
+                  <a href="#"><Image src="/images/instagram.png" alt="Instagram" width={16} height={16} /></a>
+                  <a href="#"><Image src="/images/facebook.png" alt="Facebook" width={16} height={16} /></a>
+                  <a href="#"><Image src="/images/gmail.png" alt="Gmail" width={16} height={16} /></a>
                 </div>
                 <p className="social-caption">Follow us for the latest updates and exclusive offers</p>
               </div>
             </div>
           </div>
         </div>
-        <a href="#" className="whatsapp-float">
-          <Image src="/images/1995_4132.svg" alt="WhatsApp" width={45} height={45} />
+        <a href="#" className="contact-whatsapp-float">
+          <Image src="/images/whatsapp.png" alt="WhatsApp" width={45} height={45} />
         </a>
       </section>
     </>

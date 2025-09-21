@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "/review/page": [
+      "static/chunks/33516_next_dist_876c56b1._.js",
+      "static/chunks/Desktop_vs code_YARITU_FULLSTACK_USER_frontend_app_layout_ad422bfc.js",
+      "static/chunks/33516_next_dist_client_components_builtin_global-error_1a3f87a1.js",
+      "static/chunks/33516_next_dist_e3dba82c._.js",
+      "static/chunks/Desktop_vs code_YARITU_FULLSTACK_USER_frontend_app_review_page_1a3f87a1.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_50d244af._.js",
+      "static/chunks/33516_next_dist_compiled_react-dom_0ccd7507._.js",
+      "static/chunks/33516_next_dist_compiled_next-devtools_index_eea8fe94.js",
+      "static/chunks/33516_next_dist_compiled_267e37bb._.js",
+      "static/chunks/33516_next_dist_client_51849fd0._.js",
+      "static/chunks/33516_next_dist_a6c9bd62._.js",
+      "static/chunks/33516_@swc_helpers_cjs_9e5d218d._.js",
+      "static/chunks/Desktop_vs code_YARITU_FULLSTACK_USER_frontend_a0ff3932._.js",
+      "static/chunks/turbopack-Desktop_vs code_YARITU_FULLSTACK_USER_frontend_9311b1dc._.js"
+    ]
+  }
+}

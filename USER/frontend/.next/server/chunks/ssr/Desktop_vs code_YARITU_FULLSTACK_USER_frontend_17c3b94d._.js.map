@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/dhruveshshyara/Desktop/vs%20code/YARITU_FULLSTACK/USER/frontend/app/offer/loading.js"],"sourcesContent":["// app/offer/loading.js\nexport default function Loading() {\n  return (\n    <div className=\"offer-page\">\n      <div style={{ minHeight: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>\n        <p>Loading offers...</p>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":"AAAA,uBAAuB;;;;;;;AACR,SAAS;IACtB,qBACE,6SAAC;QAAI,WAAU;kBACb,cAAA,6SAAC;YAAI,OAAO;gBAAE,WAAW;gBAAQ,SAAS;gBAAQ,YAAY;gBAAU,gBAAgB;YAAS;sBAC/F,cAAA,6SAAC;0BAAE;;;;;;;;;;;;;;;;AAIX","debugId":null}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["file:///Users/dhruveshshyara/Desktop/vs%20code/YARITU_FULLSTACK/USER/frontend/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,2KACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}

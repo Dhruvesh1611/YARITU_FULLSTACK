@@ -1,0 +1,28 @@
+/* [project]/Desktop/vs code/YARITU_FULLSTACK/USER/frontend/components/CelebritySection.css [app-client] (css) */
+.celebrity-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.celebrity-title {
+  margin-bottom: 30px;
+  font-family: Cinzel, serif;
+  font-size: 2.5rem;
+}
+
+.video-container {
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*# sourceMappingURL=3d860_vs%20code_YARITU_FULLSTACK_USER_frontend_components_CelebritySection_css_bad6b30c._.single.css.map*/

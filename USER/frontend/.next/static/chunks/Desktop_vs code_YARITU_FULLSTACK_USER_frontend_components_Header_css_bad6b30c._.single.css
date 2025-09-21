@@ -1,0 +1,202 @@
+/* [project]/Desktop/vs code/YARITU_FULLSTACK/USER/frontend/components/Header.css [app-client] (css) */
+.main-header {
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-nav {
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  height: 88px;
+  margin: 0 auto;
+  padding-left: 100px;
+  display: flex;
+  position: relative;
+}
+
+.nav-center, .nav-group {
+  align-items: center;
+  gap: 32px;
+  display: flex;
+}
+
+.nav-logo img {
+  width: auto;
+  height: 75px;
+}
+
+.nav-link {
+  color: #2a2a2a;
+  padding-bottom: 5px;
+  font-family: Poiret One, sans-serif;
+  font-size: 21px;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link.active:after {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-offers {
+  color: #000;
+  flex-direction: column;
+  align-items: center;
+  font-family: Cinzel, serif;
+  font-size: 21px;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  right: 20px;
+}
+
+.offer-icon {
+  width: 37px;
+  height: 37px;
+}
+
+.hamburger {
+  z-index: 101;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+  background-color: #000;
+  width: 30px;
+  height: 2px;
+  transition: transform .2s ease-in-out;
+  position: absolute;
+}
+
+.hamburger-inner {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-inner:before, .hamburger-inner:after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner:before {
+  top: -10px;
+}
+
+.hamburger-inner:after {
+  bottom: -10px;
+}
+
+.hamburger-box.open .hamburger-inner {
+  transform: rotate(45deg);
+}
+
+.hamburger-box.open .hamburger-inner:before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger-box.open .hamburger-inner:after {
+  bottom: 0;
+  transform: rotate(90deg);
+}
+
+.mobile-nav {
+  z-index: 102;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 280px;
+  height: 100vh;
+  padding-top: 100px;
+  transition: transform .3s ease-in-out;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, .1);
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+.mobile-nav-link {
+  color: #2a2a2a;
+  font-family: Poiret One, sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.overlay {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 992px) {
+  .nav-center {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-group, .nav-offers {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-nav {
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo img {
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=Desktop_vs%20code_YARITU_FULLSTACK_USER_frontend_components_Header_css_bad6b30c._.single.css.map*/

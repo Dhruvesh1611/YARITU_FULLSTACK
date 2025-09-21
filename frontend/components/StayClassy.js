@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import './StayClassy.css';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const collectionImages = [
   '/images/Featured1.png', '/images/Trending1.png', '/images/Featured3.png', '/images/reel2.png', '/images/reel3.png',
@@ -14,6 +15,8 @@ const collectionImages = [
 const StayClassy = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const gridRef = useRef(null);
+  const isMobile = useMediaQuery('(max-width: 768px)');
+  const gridSize = isMobile ? 16 : 25;
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -22,8 +25,6 @@ const StayClassy = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // We'll leave the automatic flipping on scroll for now,
-        // but the button gives manual control.
         if (entry.isIntersecting) {
           setIsFlipped(true);
         } else {
@@ -32,7 +33,7 @@ const StayClassy = () => {
       },
       {
         rootMargin: '0px',
-        threshold: 0.5, // Trigger when 50% of the element is visible
+        threshold: 0.5,
       }
     );
 
@@ -49,12 +50,12 @@ const StayClassy = () => {
 
   return (
     <section className="stay-classy-section" ref={gridRef}>
-      <div className="stay-classy-grid">
-        {Array.from({ length: 25 }).map((_, index) => (
+      <div className={`stay-classy-grid ${isMobile ? 'grid-4x4' : ''}`}>
+        {Array.from({ length: gridSize }).map((_, index) => (
           <div key={index} className="flip-card">
             <div
               className={`flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}
-              style={{ transitionDelay: `${isFlipped ? index * 0.05 : (24 - index) * 0.05}s` }}
+              style={{ transitionDelay: `${isFlipped ? index * 0.05 : (gridSize - 1 - index) * 0.05}s` }}
             >
               <div className="flip-card-front">
                 {/* The background image will create the logo */}

@@ -82,17 +82,19 @@
 
 @media (max-width: 768px) {
   .multiple-offers-section .offers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    height: auto;
-    perspective: none;
+    height: 350px; /* Adjust height for smaller screens */
+    transform: scale(0.8); /* Scale down the entire container */
   }
-  .multiple-offers-section .offer-card {
-    position: static;
-    transform: none !important;
-    filter: grayscale(0%) !important;
-    width: 100%;
-    height: 350px;
+  .multiple-offers-section .offer-details {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+  .multiple-offers-section .offer-category {
+    font-size: 1rem;
+  }
+  .multiple-offers-section .offer-discount {
+    font-size: 0.9rem;
   }
 }

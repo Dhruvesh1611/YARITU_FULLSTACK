@@ -106,6 +106,36 @@
 .flip-card:nth-child(25) .flip-card-front { background-position: 100% 100%; }
 
 
+.stay-classy-grid.grid-4x4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.stay-classy-grid.grid-4x4 .flip-card-front {
+  background-size: 400% 400%;
+}
+
+/* Re-calculate positions for 4x4 grid */
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(1) .flip-card-front { background-position: 0% 0%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(2) .flip-card-front { background-position: 33.33% 0%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(3) .flip-card-front { background-position: 66.66% 0%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(4) .flip-card-front { background-position: 100% 0%; }
+
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(5) .flip-card-front { background-position: 0% 33.33%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(6) .flip-card-front { background-position: 33.33% 33.33%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(7) .flip-card-front { background-position: 66.66% 33.33%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(8) .flip-card-front { background-position: 100% 33.33%; }
+
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(9) .flip-card-front { background-position: 0% 66.66%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(10) .flip-card-front { background-position: 33.33% 66.66%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(11) .flip-card-front { background-position: 66.66% 66.66%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(12) .flip-card-front { background-position: 100% 66.66%; }
+
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(13) .flip-card-front { background-position: 0% 100%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(14) .flip-card-front { background-position: 33.33% 100%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(15) .flip-card-front { background-position: 66.66% 100%; }
+.stay-classy-grid.grid-4x4 .flip-card:nth-child(16) .flip-card-front { background-position: 100% 100%; }
+
 .flip-card-back {
   background-color: #2980b9;
   color: white;
